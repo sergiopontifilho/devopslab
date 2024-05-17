@@ -43,7 +43,6 @@ jobs:
       - name: New Relic License
         run: |
           sed -i "s/licensekey/${{ secrets.NEW_RELIC_LICENSE_KEY }}/g" Dockerfile
-          cat Dockerfile
 
       - name: Build Image
         run: |
